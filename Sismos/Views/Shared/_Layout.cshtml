@@ -12,7 +12,7 @@
 
          function getMap()
          {
-             map = new Microsoft.Maps.Map(document.getElementById('myMap'), { credentials: '<%=ConfigurationManager.AppSettings["APP_SETTING_BING_MAPS_KEY"]%>' });
+             map = new Microsoft.Maps.Map(document.getElementById('myMap'), { credentials: '@System.Configuration.ConfigurationManager.AppSettings["APP_SETTING_BING_MAPS_KEY"]' });
          }
     </script>
 </head>
