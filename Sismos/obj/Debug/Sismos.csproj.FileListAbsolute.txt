@@ -24,3 +24,29 @@ c:\users\andre_000\documents\visual studio 2013\Projects\Sismos\Sismos\bin\Newto
 c:\users\andre_000\documents\visual studio 2013\Projects\Sismos\Sismos\obj\Debug\Sismos.csprojResolveAssemblyReference.cache
 c:\users\andre_000\documents\visual studio 2013\Projects\Sismos\Sismos\obj\Debug\Sismos.dll
 c:\users\andre_000\documents\visual studio 2013\Projects\Sismos\Sismos\obj\Debug\Sismos.pdb
+C:\Users\andre_000\Desktop\sitio_sismos\Sismos\bin\Sismos.dll.config
+C:\Users\andre_000\Desktop\sitio_sismos\Sismos\bin\Sismos.dll
+C:\Users\andre_000\Desktop\sitio_sismos\Sismos\bin\Sismos.pdb
+C:\Users\andre_000\Desktop\sitio_sismos\Sismos\bin\Antlr3.Runtime.dll
+C:\Users\andre_000\Desktop\sitio_sismos\Sismos\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\andre_000\Desktop\sitio_sismos\Sismos\bin\Newtonsoft.Json.dll
+C:\Users\andre_000\Desktop\sitio_sismos\Sismos\bin\System.Web.Helpers.dll
+C:\Users\andre_000\Desktop\sitio_sismos\Sismos\bin\System.Web.Mvc.dll
+C:\Users\andre_000\Desktop\sitio_sismos\Sismos\bin\System.Web.Optimization.dll
+C:\Users\andre_000\Desktop\sitio_sismos\Sismos\bin\System.Web.Razor.dll
+C:\Users\andre_000\Desktop\sitio_sismos\Sismos\bin\System.Web.WebPages.Deployment.dll
+C:\Users\andre_000\Desktop\sitio_sismos\Sismos\bin\System.Web.WebPages.dll
+C:\Users\andre_000\Desktop\sitio_sismos\Sismos\bin\System.Web.WebPages.Razor.dll
+C:\Users\andre_000\Desktop\sitio_sismos\Sismos\bin\WebGrease.dll
+C:\Users\andre_000\Desktop\sitio_sismos\Sismos\bin\System.Web.Helpers.xml
+C:\Users\andre_000\Desktop\sitio_sismos\Sismos\bin\System.Web.Mvc.xml
+C:\Users\andre_000\Desktop\sitio_sismos\Sismos\bin\System.Web.Optimization.xml
+C:\Users\andre_000\Desktop\sitio_sismos\Sismos\bin\System.Web.Razor.xml
+C:\Users\andre_000\Desktop\sitio_sismos\Sismos\bin\System.Web.WebPages.xml
+C:\Users\andre_000\Desktop\sitio_sismos\Sismos\bin\System.Web.WebPages.Deployment.xml
+C:\Users\andre_000\Desktop\sitio_sismos\Sismos\bin\System.Web.WebPages.Razor.xml
+C:\Users\andre_000\Desktop\sitio_sismos\Sismos\bin\Antlr3.Runtime.pdb
+C:\Users\andre_000\Desktop\sitio_sismos\Sismos\bin\Newtonsoft.Json.xml
+C:\Users\andre_000\Desktop\sitio_sismos\Sismos\obj\Debug\Sismos.csprojResolveAssemblyReference.cache
+C:\Users\andre_000\Desktop\sitio_sismos\Sismos\obj\Debug\Sismos.dll
+C:\Users\andre_000\Desktop\sitio_sismos\Sismos\obj\Debug\Sismos.pdb
