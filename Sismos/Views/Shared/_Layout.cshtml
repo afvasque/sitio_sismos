@@ -43,7 +43,8 @@
 
         //add pushpin click event
         startDragDetails = function (e) {
-            lat = e.target.getLocation().latitude;
+            alert(e.target.getLocation().latitude + "," +  e.target.getLocation().longitud)
+           /* lat = e.target.getLocation().latitude;
             lon = e.target.getLocation().longitude;
             $("#webjob").html("<p>Begin to find all larger than 6 degrees earthquakes in the circle with radius 1000 kms and center " + lat + "," + lon + " since year 2000.</p>");
             $("#message").html("");
@@ -66,7 +67,7 @@
                 error: function (XMLHttpRequest, textStatus, errorThrown) {
                     $("#webjob").html("Something wrong to get the earthquakes nearby.");
                 }
-            });
+            });*/
         }
 
         function showMessage() {
