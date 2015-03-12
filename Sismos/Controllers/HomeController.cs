@@ -7,6 +7,9 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Script.Serialization;
+using Microsoft.WindowsAzure.Storage;
+using Microsoft.WindowsAzure.Storage.Queue;
+using Microsoft.WindowsAzure;
 
 namespace Sismos.Controllers
 {
@@ -73,6 +76,28 @@ namespace Sismos.Controllers
             ViewData["pinLong"] = Sismos.Controllers.JavaScript.Serialize(pinsLong);
 
             return View();
+        }
+
+        [HttpGet]
+        public ActionResult webjob(string latitude, string longitude)
+        {
+            CloudStorageAccount storageAccount = CloudStorageAccount.Parse(CloudConfigurationManager.GetSetting("StorageConnectionString"));
+            CloudQueueClient queueClient = storageAccount.CreateCloudQueueClient();
+            CloudQueue queue = queueClient.GetQueueReference("webjobsqueue");
+            queue.CreateIfNotExists();
+
+            string s = latitude +','+ longitude;
+            string basecode = Convert.ToBase64String(System.Text.Encoding.UTF8.GetBytes(s));
+
+            CloudQueueMessage message = new CloudQueueMessage(basecode);
+            queue.AddMessage(message);
+
+            return Json(new { success = true, responseText = "Your message successfuly sent!" }, JsonRequestBehavior.AllowGet);
+        }
+
+        public ActionResult result(string latitude)
+        {
+            return Content("Ok");
         }
 
         public ActionResult About()

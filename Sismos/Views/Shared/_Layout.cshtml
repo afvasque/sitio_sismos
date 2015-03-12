@@ -49,7 +49,8 @@
             $("#message").html("");
             $.ajax({
                 type: "GET",
-                url: "../webjob/" + lat + "/" + lon,
+                url: "/Home/webjob/",
+                data: "latitude=" + lat + "&longitude=" + lon,
                 success: function (msg) {
                     $("#webjob").html("<p>Submit a webjob to find 6 degrees earthquakes in the circle with radius 1000 kms and center " + lat + "," + lon + " since year 2000.</p>");
                     var message = $("#message");
