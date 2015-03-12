@@ -92,7 +92,7 @@ namespace Sismos.Controllers
             CloudQueueMessage message = new CloudQueueMessage(basecode);
             queue.AddMessage(message);
 
-            return Json(new { success = true, responseText = "Your message successfuly sent!" }, JsonRequestBehavior.AllowGet);
+            return Json(new { success = true, responseText = "Your message" }, JsonRequestBehavior.AllowGet);
         }
 
         public ActionResult result(string latitude)
