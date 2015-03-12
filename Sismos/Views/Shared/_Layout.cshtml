@@ -76,7 +76,7 @@
 
             $.ajax({
                 type: "GET",
-                url: "../result/" + lat + "/" + lon + "?r=" + Math.random(),
+                url: "/Home/result/",// + lat + "/" + lon + "?r=" + Math.random(),
                 success: function (msg) {
                     if (msg == "") {
                         return false;
