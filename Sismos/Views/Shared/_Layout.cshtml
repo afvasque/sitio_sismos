@@ -77,19 +77,14 @@
             $.ajax({
                 type: "GET",
                 url: "/Home/result/",// + lat + "/" + lon + "?r=" + Math.random(),
+                datatype:"text",
                 success: function (msg) {
                     if (msg == "") {
                         return false;
                     }
-                    var ll = eval(msg);
-                    $("#message").html("There are " + (ll.length - 1).toString() + " big earthquakes happened near " + lat + ", " + lon + ".");
-                    removeResultPushpin();
-
-                    for (var i = 1; i < ll.length; i++) {
-                        var pushpinOptions = { icon: 'Content/images/pin.png', text: ll[i][3].toString(), visible: true, textOffset: offset };
-                        var pushpin = new Microsoft.Maps.Pushpin(new Microsoft.Maps.Location(ll[i][1], ll[i][2]), pushpinOptions);
-                        map.entities.push(pushpin);
-                    }
+                    
+                    $("#message").html("There are " + msg.responseText + " big earthquakes happened near.");
+                    
                     clearInterval(showMessageInterval);
                     showMessageInterval = null;
                 },

@@ -10,6 +10,7 @@ using System.Web.Script.Serialization;
 using Microsoft.WindowsAzure.Storage;
 using Microsoft.WindowsAzure.Storage.Queue;
 using Microsoft.WindowsAzure;
+using Microsoft.WindowsAzure.Storage.Blob;
 
 namespace Sismos.Controllers
 {
@@ -87,9 +88,9 @@ namespace Sismos.Controllers
             queue.CreateIfNotExists();
 
             string s = latitude +','+ longitude;
-            string basecode = Convert.ToBase64String(System.Text.Encoding.UTF8.GetBytes(s));
+//            string basecode = Convert.ToBase64String(System.Text.Encoding.UTF8.GetBytes(s));
 
-            CloudQueueMessage message = new CloudQueueMessage(basecode);
+            CloudQueueMessage message = new CloudQueueMessage(s);
             queue.AddMessage(message);
 
             return Json(new { success = true, responseText = "Your message" }, JsonRequestBehavior.AllowGet);
@@ -97,7 +98,30 @@ namespace Sismos.Controllers
 
         public ActionResult result(string latitude)
         {
-            return Content("Ok");
+            try
+            {
+                CloudStorageAccount storageAccount = CloudStorageAccount.Parse(CloudConfigurationManager.GetSetting("StorageConnectionString"));
+                CloudBlobClient blobClient = storageAccount.CreateCloudBlobClient();
+                CloudBlobContainer container = blobClient.GetContainerReference("earthquake");
+                CloudBlockBlob blockBlob = container.GetBlockBlobReference("locations.txt");
+
+                string text;
+                using (var memoryStream = new MemoryStream())
+                {
+                    blockBlob.DownloadToStream(memoryStream);
+                    text = System.Text.Encoding.UTF8.GetString(memoryStream.ToArray());
+                }
+
+                int result = text.Count(n => n == '\n') - 1;
+
+                return Json(new { success = true, responseText = result }, JsonRequestBehavior.AllowGet);
+            }
+            catch(Exception e)
+            {
+                return Content("Ok");
+            }
+
+            
         }
 
         public ActionResult About()
