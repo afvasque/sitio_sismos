@@ -1,0 +1,14 @@
+C:\Users\Andrea\Documents\GitHub\sitio_sismos\WebJob\WebJob\bin\Debug\WebJob.exe.config
+C:\Users\Andrea\Documents\GitHub\sitio_sismos\WebJob\WebJob\bin\Debug\WebJob.exe
+C:\Users\Andrea\Documents\GitHub\sitio_sismos\WebJob\WebJob\bin\Debug\WebJob.pdb
+C:\Users\Andrea\Documents\GitHub\sitio_sismos\WebJob\WebJob\bin\Debug\Microsoft.WindowsAzure.Configuration.dll
+C:\Users\Andrea\Documents\GitHub\sitio_sismos\WebJob\WebJob\bin\Debug\Microsoft.WindowsAzure.Jobs.dll
+C:\Users\Andrea\Documents\GitHub\sitio_sismos\WebJob\WebJob\bin\Debug\Microsoft.WindowsAzure.Jobs.Host.dll
+C:\Users\Andrea\Documents\GitHub\sitio_sismos\WebJob\WebJob\bin\Debug\Microsoft.WindowsAzure.StorageClient.dll
+C:\Users\Andrea\Documents\GitHub\sitio_sismos\WebJob\WebJob\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Andrea\Documents\GitHub\sitio_sismos\WebJob\WebJob\bin\Debug\Microsoft.WindowsAzure.Jobs.xml
+C:\Users\Andrea\Documents\GitHub\sitio_sismos\WebJob\WebJob\bin\Debug\Microsoft.WindowsAzure.Jobs.Host.xml
+C:\Users\Andrea\Documents\GitHub\sitio_sismos\WebJob\WebJob\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Andrea\Documents\GitHub\sitio_sismos\WebJob\WebJob\obj\Debug\WebJob.exe
+C:\Users\Andrea\Documents\GitHub\sitio_sismos\WebJob\WebJob\obj\Debug\WebJob.pdb
+C:\Users\Andrea\Documents\GitHub\sitio_sismos\WebJob\WebJob\obj\Debug\WebJob.csprojResolveAssemblyReference.cache
