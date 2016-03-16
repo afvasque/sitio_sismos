@@ -1,0 +1,4 @@
+*.suo
+Sismos/bin/Sismos.dll
+*.cache
+Sismos/obj/Debug/Sismos.dll
